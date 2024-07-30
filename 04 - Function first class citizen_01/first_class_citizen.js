@@ -71,7 +71,7 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // code to filter prime numbers.
 function prime(number){
-    if (number <= 1){ //1 is not a prime number. 2 is the smallest prine number
+    if (number <= 1){ //1 is not a prime number. 2 is the smallest prime number
         return false
     }
     else if (number <= 3){ //2 and 3 are prime numbers numbers. Doing an explicit check
