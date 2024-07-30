@@ -1,13 +1,13 @@
-// What it takes for a function to be a first-class citizen? Recall all the 4 points
+// What does it take for a function to be a first-class citizen? Recall all the 4 points.
 
-/* For a function to be a first class-citizen it can be...
+/* A function of being a first-class citizen can be...
 1. assigned to a variable.
 2. passed as a parameter to a function.
 3. Returned as a result of a function.
 4. Can be stored in a data structure.
 */
 
-// Write a higher-order function that accepts another function as a parameter and execute function passed as a parameter.
+// Write a higher-order function that accepts another function as a parameter and executes the function passed as a parameter.
 function outerFunction(callback){
     callback()
 }
@@ -17,7 +17,7 @@ function hellowWorld(){
 }
 outerFunction(hellowWorld)
 
-// Write a fuunction and assigin this to a variable. Execute the function using the variable name. 
+// Write a function and assign this to a variable. Execute the function using the variable name. 
 // The function should accept a parameter.
 
 function greetMessage(message){
@@ -48,8 +48,8 @@ function double(number){
 numbers = [1, 2, 3, 4, 5]
 console.log(workWithNumbers(numbers, double))
 
-// Write a function that sorts an array in descending order. For this you will use the sort() that JS provides.
-// The sort() is one of the higher-order function that JS provides. You have to write the inner function that 
+// Write a function that sorts an array in descending order. For this, you will use the sort() that JS provides.
+// The sort() is one of the higher-order functions that JS provides. You have to write the inner function that 
 // implements the sorting logic. The inner function should accept two parameters. These  are two numbers from the array to compare.
 
 function descending(x, y){
@@ -70,8 +70,8 @@ outerFunction( function (){
     console.log("Hey There")
 })
 
-// Write a higher-order fucntion convert. This function converts length from one unit of measurement to the other and returns the 
-// converted length. This function will accept 2 parameters. First is the length and seond is the coversion function. 
+// Write a higher-order function convert. This function converts length from one unit of measurement to the other and returns the 
+// converted length. This function will accept 2 parameters. First is the length, and second is the conversion function. 
 // Write the conversion function as an inner function. 
 
 function convert(len, conversion){
